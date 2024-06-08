@@ -1,0 +1,356 @@
+*::after,
+::before {
+    box-sizing: border-box;
+}
+/*POLICES*/
+@font-face {
+    font-family: 'BowlbyOne';
+    src: url('fonts/BowlbyOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RubikGlitch';
+    src: url('fonts/RubikGlitch-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+
+/*PAGES D'ACCUEIL*/
+body{
+    margin:0;
+    background-image: url(images/bf4667a532b874050eb477bd891f0551.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-padding: 0;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "BowlbyOne", sans-serif;
+    
+}
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: "BowlbyOne", sans-serif;
+}
+
+header {
+    color:white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 25px;
+    animation: float 5s infinite;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.start{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: 'RubikGlitch', sans-serif;
+}
+
+.start:hover{
+  color: #935050;
+}
+
+/*pour que le titre flotte*/
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* SCROLLBAR  */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background:rgb(255, 241, 231);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #631515aa;
+    border-radius: 25px;
+    height: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 0;
+}
+
+
+/*BOUTON QUI MENE VERS LE HAUT*/
+#scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 35px;
+    right: 40px;
+  }
+  #scroll_to_top img {
+    width: 60px;
+  }
+
+  #scroll_to_top img:hover {
+    width: 65px;
+    position: fixed;
+  }
+
+
+
+/*FORMULAIRE*/
+form{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: solid 6px;
+    border-color: rgb(48, 1, 1);
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: rgba(68, 28, 28, 0.818);
+}
+input {
+    padding: 1rem;
+    border: 2px solid;
+    border-color: black;
+    width: 18rem;
+    background-color:rgb(87, 56, 56); 
+    margin-top: 3px;
+    margin-bottom: 9px;
+    color: rgb(255, 255, 255);
+    font-size:medium;
+    border-radius: 25px;
+}
+
+form {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: 'Montserrat';
+}
+
+#valider {
+    width: 10rem;
+    color: white;
+
+}
+
+#valider:hover {
+    background-color: white;
+    color: black;
+}
+
+.titre2{
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: "BowlbyOne", sans-serif;
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+/*IMAGES*/
+.img-desc{
+background-repeat: no-repeat;
+background-position: left;
+border-radius: 50px;
+width: 380px;
+height: 350px;
+
+}
+
+
+/* ANALOGIES*/
+
+section {
+    color: white;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    
+}
+
+.titre {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-family: "BowlbyOne", sans-serif;
+        text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+        font-size: 1.5rem;
+    }
+
+    .valeur{
+        font-size: 1.5rem;
+        font-family: "BowlbyOne", sans-serif;
+        text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+        color: rgb(255, 177, 177); 
+    }
+
+    .desc{
+        font-family: 'Montserrat';
+        color: white;
+        font-size: 1rem;
+    }
+
+    
+
+    /*BARRE DE NAVIGATION*/ 
+
+    nav {
+        width: 100%;
+        position: fixed;
+        top:0; 
+        z-index: 1000;
+        background-color: rgb(68, 28, 28);
+        text-align: center;
+        font-family: 'Montserrat';
+
+      }
+
+
+      ul {
+        width: 100%;
+        margin: auto;
+        list-style-type: none;
+        padding: 20px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 10px;
+      }
+      
+      li a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 1.3rem;;
+      }
+    
+      li a:hover {
+        color: #935050;
+      }
+      
+
+/*POP UP MENTIONS LEGALES*/
+
+footer{
+    background-color: rgb(103, 54, 54);
+    color: white;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    padding: 1.5px;
+    font-family: 'BowlbyOne';
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    background-color:rgb(103, 54, 54);
+    color: white;
+    bottom: 200px; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    flex-direction: column;
+    padding: 2rem;
+    border: solid 2px;
+}
+
+
+.closePOP {
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+
+/*s'adapter aux tailles requises*/
+
+@media only screen and (max-width: 1280px) {
+    
+  
+    .in {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 768px){
+   
+  }
+  
+  
